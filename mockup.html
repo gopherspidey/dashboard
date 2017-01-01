@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP9AAAD/QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8SAAD/+wAA//sAAP8SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AgAA/6EAAP+hAAD/AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP88AAD/4wAA/2IAAP8CAAD/AgAA/2IAAP/lAAD/PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/NgAA//kAAP//AAD/6QAA/+kAAP//AAD/+QAA/zgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8kAAD/lQAA/x4AAP80AAD/twAA//UAAP/1AAD/twAA/zQAAP8eAAD/lQAA/yQAAAAAAAAAAAAAAAAAAAAAAAD/YgAA//8AAP/pAAD/YAAA/wgAAAAAAAAAAAAA/wgAAP9gAAD/6QAA//8AAP9iAAAAAAAAAAAAAP8KAAD/RgAA/wQAAP+JAAD//QAA//8AAP/1AAD/zQAA/80AAP/1AAD//wAA//0AAP+JAAD/BAAA/0YAAP8KAAD/dAAA//8AAP+vAAD/EAAA/zIAAP+hAAD/6QAA//8AAP//AAD/6QAA/6EAAP8wAAD/EAAA/68AAP//AAD/dAAA/xwAAP/VAAD//wAA/+cAAP9wAAD/FAAAAAAAAP8MAAD/DAAAAAAAAP8WAAD/cgAA/+kAAP//AAD/0wAA/xwAAAAAAAD/DAAA/5UAAP/7AAD//wAA//0AAP/VAAD/twAA/7cAAP/VAAD//QAA//8AAP/7AAD/lQAA/wwAAAAAAAAAAAAAAAAAAAAAAAD/JAAA/4sAAP/XAAD//QAA//8AAP//AAD//QAA/9cAAP+LAAD/JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzMwoAAP8gAAD/IDMzMwoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA/n8AAP5/AAD73wAA+B8AAOw3AADn5wAA4AcAAJgZAACP8QAAwAMAAPAPAAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
+
+    <title>Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="src/stylesheets/bootstrap.vertical-tabs.min.css">
+
+    <link rel="stylesheet" href="src/stylesheets/font-awesome.min.css">
+
+    <link rel="stylesheet" href="src/stylesheets/weather-icons.min.css">
+
+    <link rel="stylesheet" href="src/index.css">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row row-eq-height">
+
+        <div class="col-sm-2"> <!-- required for floating -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-left"><!-- 'tabs-right' for right tabs -->
+            <li class="active">
+              <a href="#home" data-toggle="tab">
+                <i class="fa fa-home fa-3x" title="Home"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#weather" data-toggle="tab">
+                <i class="wi wi-cloudy fa-3x" title="Weather"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#calendar" data-toggle="tab">
+                <i class="fa fa-calendar fa-3x" title="Calendar"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#settings" data-toggle="tab">
+                <i class="fa fa-cog fa-3x" title="Settings"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-10">
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="home">
+                <div class="row">
+                <div class="col-sm-4">
+                  <div class="box-blued centered">
+                    <h1><i class="wi wi-day-sunny" title="Sunny"></i> 80°F</h1>
+                    <h4>90°F / 40°F <i class="wi wi-umbrella" title="Precipitation"></i> 30%</h4>
+                    <hr />
+                    <h5>Tomorrow</h5>
+                    <h5><i class="wi wi-day-sunny" title="Sunny"></i> 90°F / 40°F <i class="wi wi-umbrella" title="Precipitation"></i> 30%</h5>
+
+
+                  </div>
+                </div>
+
+                <div class="col-sm-8">
+                  <div class="box-grayed">
+                    <table>
+                      <thead>
+                        <tr>
+                          <td />
+                          <td />
+                          <td />
+                          <td>Time</td>
+                          <td>Summary</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><i class="fa fa-user" style="color: red; text-shadow: 1px 1px 1px #ccc;" title="Stephen"></i></td>
+                          <td></td>
+                          <td></td>
+                          <td>All Day</td>
+                          <td>Christmas Vacation</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fa fa-user" style="color: red; text-shadow: 1px 1px 1px #ccc;" title="Stephen"></i></td>
+                          <td><i class="fa fa-user" style="color: blue; text-shadow: 1px 1px 1px #ccc;" title="Gale"></i></td>
+                          <td><i class="fa fa-user" style="color: green; text-shadow: 1px 1px 1px #ccc;" title="Alex"></i></td>
+                          <td>6:45am-7:30am</td>
+                          <td>Wake up</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fa fa-user" style="color: red; text-shadow: 1px 1px 1px #ccc;" title="Stephen"></i></td>
+                          <td></i></td>
+                          <td><i class="fa fa-user" style="color: green; text-shadow: 1px 1px 1px #ccc;" title="Alex"></i></td>
+                          <td>6:00pm-6:45pm</td>
+                          <td>Soccer Practice</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="box-grayed centered">
+                    Sunday, Jan 1st<br>
+                    <h1>12:01 pm</h1>
+                  </div>
+                </div>
+              <div class="col-sm-4">
+                <div class="box-grayed centered">
+
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="box-grayed centered">
+                </div>
+              </div>
+            </div>
+              </div>
+              <div class="tab-pane" id="weather">Weather Tab.</div>
+              <div class="tab-pane" id="calendar">Calendar Tab.</div>
+              <div class="tab-pane" id="settings">Settings Tab.</div>
+
+            </div>
+        </div>
+      </div>
+
+      </div>
+    </div> <!-- /container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  </body>
+
+</html>
